@@ -11,6 +11,7 @@
     color: rgb(244, 236, 223);
     font-weight: 500;
     font-size: 2.5rem;
+    font-style: italic;
     margin-top: 0%;
     margin-bottom: 5%;
     position: relative;
@@ -70,17 +71,25 @@
 }
 
 .timeline-ponto{
-img{
-    width: 130px;
-    height: 150px;
-    border: 1px solid rgb(75, 56, 34); /* 1 borda da imagem*/
-    border-radius: 48%;
-    outline: 1px solid rgb(183, 137, 43); /* 2 borda da imagem*/
-    outline-offset: 2px;   /* espaço vazio entre as bordas*/
-    filter: brightness(85%);
-    margin-top: 15px;
+    img{
+        width: 130px;
+        height: 150px;
+        border: 1px solid rgb(75, 56, 34); /* 1 borda da imagem*/
+        border-radius: 48%;
+        outline: 1px solid rgb(183, 137, 43); /* 2 borda da imagem*/
+        outline-offset: 2px;   /* espaço vazio entre as bordas*/
+        filter: brightness(85%);
+        margin-top: 15px;
+    }
 }
+
+.timeline-ponto:hover{
+    img{
+        transform: translateY(-5px);
+        box-shadow: 0 5px 20px rgba(124, 124, 106, 0.932);
+    }
 }
+
 
 .section {
     margin: 0;
