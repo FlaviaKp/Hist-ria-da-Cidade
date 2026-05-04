@@ -90,138 +90,150 @@
     }
 }
 
-
-.section {
+/*Header + Hero section*/
+* {
     margin: 0;
-    font-family: 'Serif', Georgia, serif; 
-    background-color: #c5b398;
-} 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Serif', Georgia, serif;
+    background-color: #f9f4eb;
+}
 
 .barra-topo {
     background-color: rgb(27, 19, 9);
     color: #e0c39a;
-    padding: 15px 50px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-weight: bold;
     letter-spacing: 2px;
-    margin-top: 0;
 }
 
-.conteudo-principal{
-    max-width: 900px;
-    margin: 60px auto; 
-    padding: 0 10px;
-    font-weight: bolder;
-    margin-left: 5%;
-    margin-right: 55%;
-    margin-top:0%
+.menu-topo a {
+    color: #e0c39a;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.menu-topo a:hover {
+    opacity: 0.7;
+}
+
+.hero-section {
+    display: flex;
+    align-items: stretch; 
+    justify-content: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 50px;
+    gap: 80px; 
+}
+
+.conteudo-principal {
+    flex:1.4; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
 }
 
 .subtitulo {
-    color: #2f1717;
+    color: #8b5e34;
     font-size: 14px;
     letter-spacing: 3px;
     display: inline-block;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 0;
     border-top: 1px solid #1b1a18;
     border-bottom: 1px solid #1b1a18;
+    margin-bottom: 20px;
+    width: fit-content;
 }
 
 .titulo-principal {
-    font-size: 80px;
+    font-size: 72px;
     color: #2b2b2b;
-    margin: 20px 0;
+    line-height: 1.1;
+    margin-bottom: 25px;
 }
 
 .titulo-principal em {
     font-style: italic;
     color: #8b5e34;
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display', serif;
 }
 
 .descrição {
-    font-size: 20px;
+    font-size: 18px;
     color: #4a4a4a;
-    line-height: 1.2;
+    line-height: 1.6;
     margin-bottom: 40px;
+    max-width: 500px;
 }
-
 
 .grupo-botoes {
     display: flex;
-    gap: 20px;
+    gap: 15px;
+}
+
+.botao-primario, .botao-secundario {
+    padding: 16px 32px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .botao-primario {
     background-color: #1a0f08;
     color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
 }
 
 .botao-secundario {
-    border: 2px solid #1a0f08;
+    border: 1px solid #1a0f08;
     color: #1a0f08;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-}
-    .botao-primario:hover {
-    background-color: #3d2a1d; 
-    cursor: pointer;
-    transition: 0.3s; 
 }
 
-.botao-secundario:hover {
-    background-color: #1a0f08;
-    color: #f9f4eb;            
-    cursor: pointer; 
-    transition: 0.3s;
-}
+.botao-primario:hover { background-color: #3d2a1d; }
+.botao-secundario:hover { background-color: #1a0f08; color: #f9f4eb; }
 
 .moldura-quadro {
+    flex: 1.4; 
     background-color: #f7f1e6; 
-    padding: 15px; 
-    border: 2px solid #5d4a36;  
-    margin: 80px auto; 
-    position: absolute;
-    top: 100px;
-    right: 10%;
-    margin: 0%;
-    width: 700px;
+    padding: 12px; /* Moldura bege robusta */
+    border: 1px solid #5d4a36;
+    position: relative;
+    display: flex; 
+    margin-top: 45px;
+}
 
+.moldura-quadro::before {
+    content: '';
+    position: absolute;
+    top: -10px; 
+    left: -10px; 
+    right: -10px; 
+    bottom: -10px;
+    border: 1px solid #c5b398;
+    pointer-events: none;
 }
 
 .moldura-interna {
+    flex: 1.2; 
     border: 1px solid #c5b398;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px; 
-    padding-top: 10px; 
-    overflow: hidden; 
+    background: #eee;
 }
 
 .moldura-interna img {
-    height: 450px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
     display: block;
-    max-width: 100%;        
-    display: block;
-    border: 1px solid #c5b398; 
-}
-
-.grupo-botoes {
-    margin-bottom: 40px;
-    display: flex;
-    gap: 20px;
-    }
-
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    filter: brightness(95%);
 }
