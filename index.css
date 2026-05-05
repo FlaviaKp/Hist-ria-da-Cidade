@@ -3,19 +3,20 @@
     background-color: rgb(27, 19, 9);
     color:rgb(183, 137, 43) ;
     padding:3% 3% ;
-    text-align:center ;
+    text-align:center;
 }
-
+.timeline-seçao h3{
+    font-size: x-small;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+}
 .timeline-seçao h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(244, 236, 223);
     font-weight: 500;
     font-size: 2.5rem;
-    font-style: italic;
-    margin-top: 0%;
-    margin-bottom: 5%;
     position: relative;
-    
+    margin-bottom: 5%;
 }
 
 .timeline-seçao h2::after{  /* adicionar a linha embaixo do titulo*/
@@ -25,10 +26,11 @@
     height: 2px;
     background-color: rgb(183, 137, 43);
     margin: 12px auto 0;
+    
 }
 
 .timeline-linha{
-    display:flex ;
+    display:flex;
     justify-content:space-between ;
     position:relative ;
     border-top: 2px solid rgb(123, 93, 59); /* linha da timeline*/
@@ -57,21 +59,19 @@
 }
 
 .timeline-ponto .ano{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: sans-serif;
     font-style: italic;
 }
 
 .timeline-ponto .descricao{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
     font-size:small;
     letter-spacing: 1px;
-    color: rgb(177, 174, 145);
-    border-bottom: 2px;
-    margin-top: 5px;
+    color: rgb(244, 236, 223);
+    margin-top: 20px;
 }
 
-.timeline-ponto{
-    img{
+.timeline-ponto img{ 
         width: 130px;
         height: 150px;
         border: 1px solid rgb(75, 56, 34); /* 1 borda da imagem*/
@@ -81,13 +81,22 @@
         filter: brightness(85%);
         margin-top: 15px;
     }
-}
 
 .timeline-ponto:hover{
     img{
         transform: translateY(-5px);
-        box-shadow: 0 5px 20px rgba(124, 124, 106, 0.932);
+        box-shadow: 0 5px 10px rgba(124, 124, 106, 0.932);
     }
+}
+
+.resumo{
+    font-family: sans-serif;
+    color: rgb(244, 236, 223);
+    text-align: justify;
+    line-height: 2;
+    font-size: 0.75rem;
+    margin: 12px auto;
+    padding: 0 2rem;
 }
 
 /*Header + Hero section*/
