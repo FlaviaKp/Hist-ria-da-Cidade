@@ -46,6 +46,7 @@ Molduras decorativas
 
 Cantos dourados com bevel interno, prontos para receber imagens com distinção.
 
+
 🛠️ Tecnologias
 
 Este projeto foi desenvolvido com as seguintes tecnologias:
@@ -57,6 +58,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 ⚡ **JavaScript** — interatividade e linha do tempo
 
 🗂️ **GitHub Pages** — hospedagem gratuita do site
+
 
 
 🎨 Design
