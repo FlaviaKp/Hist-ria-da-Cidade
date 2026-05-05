@@ -12,7 +12,7 @@ paleta sépia inspirada em documentos históricos e molduras fotográficas estil
 🖥️ Preview
 
 
-Funcionalidades
+🚀 Funcionalidades
 
 🖼️ 
 Hero section
