@@ -12,19 +12,37 @@ paleta sépia inspirada em documentos históricos e molduras fotográficas estil
 🖥️ Preview
 
 
-🚀 Funcionalidades
+Funcionalidades
 
-​Hero section com moldura principal para imagem histórica
+🖼️ 
+Hero section
 
-​Linha do tempo com marcos de 1693 a 2000s, cada um com moldura para foto
+Moldura principal para imagem histórica, apresentada com destaque na entrada da página.
 
-​Cards temáticos — Documentos, Personagens e Galeria de Fotos
+🕰️
+Linha do tempo
 
-​Grade de Bairros assimétrica (Centro Histórico, Porto Velho, Vila Operária + 14 bairros)
+Marcos de 1693 até os anos 2000, cada um com sua própria moldura para fotografia.
 
-​Seção de contribuição para envio de fotos e documentos pela comunidade
+📂
+Cards temáticos
 
-​Molduras com cantos dourados decorativos e bevel interno prontas para receber imagens
+Três eixos de exploração — Documentos, Personagens e Galeria de Fotos.
+
+🗺️
+Grade de bairros
+
+Composição assimétrica com Centro Histórico, Porto Velho e Vila Operária em destaque, mais 14 bairros.
+
+🤝
+Contribuição comunitária
+
+Seção dedicada ao envio de fotos e documentos pela própria comunidade.
+
+✨
+Molduras decorativas
+
+Cantos dourados com bevel interno, prontos para receber imagens com distinção.
 
 🛠️ Tecnologias
 
