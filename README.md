@@ -68,8 +68,10 @@ Editorial histórico / Art Nouveau
 
 Não há dependências externas — basta abrir o arquivo .html no navegador.
 
+*Link Funcional do site* = ()
+
 🤝 Contribuições
 
 Equipe -> Flávia,Amanda,Melanie,Matheus,Enzo
-📄 Licença
-Este projeto está sob a licença MIT.
+
+📄Projeto criado para fins acadêmicos!!!
