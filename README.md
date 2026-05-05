@@ -14,6 +14,8 @@ paleta sépia inspirada em documentos históricos e molduras fotográficas estil
 
 🚀 Funcionalidades
 
+Este projeto oferece as seguintes funcionalidades:
+
 🖼️ 
 Hero section
 
@@ -46,20 +48,15 @@ Cantos dourados com bevel interno, prontos para receber imagens com distinção.
 
 🛠️ Tecnologias
 
-�
-�
-Carregar imagem
-Carregar imagem
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
-HTML5 semântico
+🌐 **HTML5** — estrutura e semântica das páginas
 
-CSS3 puro — sem frameworks
+🎨 **CSS3** — estilização e molduras decorativas
 
-Google Fonts: Playfair Display, Libre Baskerville, Source Serif 4
+⚡ **JavaScript** — interatividade e linha do tempo
 
-Layout responsivo com CSS Grid e Flexbox
-
-Variáveis CSS para paleta de cores consistente
+🗂️ **GitHub Pages** — hospedagem gratuita do site
 
 
 🎨 Design
