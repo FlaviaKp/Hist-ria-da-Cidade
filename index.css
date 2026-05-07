@@ -292,13 +292,7 @@ body {
   --tag-bg: #fff;
 }
 
-body {
-  background-color: var(--bg);
-  font-family:'Georgia', serif;
-  color: var(--text);
-  padding: 60px 48px;
-  min-height: 100vh;
-}
+
 
 h1 {
   font-family: 'Playfair Display', Georgia, serif;  
@@ -307,6 +301,9 @@ h1 {
   color: var(--dark);
   margin-bottom: 12px;
   letter-spacing: -0.32px;
+  margin-top: 3%;
+    text-align: center;
+    flex-direction: column;
 }
 
 .title-underline {
@@ -314,6 +311,8 @@ h1 {
   height: 3px;
   background: var(--gold);
   margin-bottom: 36px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .layout {
@@ -331,6 +330,7 @@ h1 {
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-bottom: 3%;
 }
 
 thead tr {
@@ -388,6 +388,7 @@ td.nome { font-weight: 500; }
   max-width: 420px;
   flex: 1;
   text-align: justify;
+    margin-bottom: 3%;
 }
 
 .destaques h2 {
