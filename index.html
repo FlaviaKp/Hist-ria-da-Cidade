@@ -78,8 +78,253 @@
             </div>
         </div>
     </section>
-<section id="pontos-turisticos"> 
+<section id="pontos-turisticos">
+    
 <!-- tabela fica aqui  -->
-</section>
+    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pontos Turísticos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=EB+Garamond:wght@400;500&family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f5f0e8;
+      --dark: #1a1714;
+      --gold: #b8922a;
+      --gold-light: #d4a94a;
+      --text: #2c2820;
+      --muted: #7a6e5f;
+      --border: #ddd5c0;
+      --tag-bg: #fff;
+    }
+
+    body {
+      background-color: var(--bg);
+      font-family: sans-serif;
+      color: var(--text);
+      padding: 60px 48px;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 35px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 12px;
+      letter-spacing: -0.32px;
+    }
+
+    .title-underline {
+      width: 48px;
+      height: 3px;
+      background: var(--gold);
+      margin-bottom: 36px;
+    }
+
+    .layout {
+      display: flex;
+      gap: 56px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .table-wrapper {
+      flex: 1;
+      min-width: 320px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead tr {
+      background-color: var(--dark);
+    }
+
+    thead th {
+      font-family: sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.92px;
+      text-transform: uppercase;
+      color: #e8e0d0;
+      padding: 13px 16px;
+      text-align: left;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+
+    tbody tr:hover {
+      background: rgba(184, 146, 42, 0.06);
+    }
+
+    tbody td {
+      padding: 13px 16px;
+      font-size: 15px;
+      color: var(--text);
+      vertical-align: middle;
+    }
+
+    td.nome { font-weight: 500; }
+
+    .tag {
+      display: inline-block;
+      font-family: sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      border: 1px solid var(--border);
+      background: var(--tag-bg);
+      color: var(--muted);
+      padding: 3px 8px;
+      border-radius: 2px;
+    }
+
+    .stars { color: var(--gold-light); font-size: 15px; letter-spacing: 1px; }
+    .stars .empty { color: #d9ceb8; }
+
+    .destaques {
+      min-width: 260px;
+      max-width: 420px;
+      flex: 1;
+    }
+
+    .destaques h2 {
+      font-family: sans-serif;
+      font-size: 17px;
+      font-weight: 500;
+      color: var(--dark);
+      margin-bottom: 20px;
+    }
+
+    .destaques-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px 40px;
+    }
+
+    .destaque-item {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .destaque-title {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-family: sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.64px;
+      color: var(--dark);
+      border-left: 3px solid var(--gold);
+      padding-left: 9px;
+    }
+
+    .destaque-list {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.5;
+      padding-left: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Pontos Turísticos</h1>
+  <div class="title-underline"></div>
+
+  <div class="layout">
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Tipo</th>
+            <th>Época</th>
+            <th>Avaliação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="nome">Igreja da Sé</td>
+            <td><span class="tag">Religioso</span></td>
+            <td>1710</td>
+            <td><span class="stars">★★★★★</span></td>
+          </tr>
+          <tr>
+            <td class="nome">Palácio do Governo</td>
+            <td><span class="tag">Histórico</span></td>
+            <td>1808</td>
+            <td><span class="stars">★★★★<span class="empty">★</span></span></td>
+          </tr>
+          <tr>
+            <td class="nome">Mercado Municipal</td>
+            <td><span class="tag">Cultural</span></td>
+            <td>1892</td>
+            <td><span class="stars">★★★★★</span></td>
+          </tr>
+          <tr>
+            <td class="nome">Porto das Artes</td>
+            <td><span class="tag">Turístico</span></td>
+            <td>1750</td>
+            <td><span class="stars">★★★★<span class="empty">★</span></span></td>
+          </tr>
+          <tr>
+            <td class="nome">Museu da Cidade</td>
+            <td><span class="tag">Cultural</span></td>
+            <td>1940</td>
+            <td><span class="stars">★★★★★</span></td>
+          </tr>
+          <tr>
+            <td class="nome">Jardim Histórico</td>
+            <td><span class="tag">Lazer</span></td>
+            <td>1889</td>
+            <td><span class="stars">★★★<span class="empty">★★</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="destaques">
+      <h2>Destaques por categoria</h2>
+      <div class="destaques-grid">
+        <div class="destaque-item">
+          <div class="destaque-title"><span>⛪</span> Religioso</div>
+          <div class="destaque-list">Igreja da Sé, Convento dos Jesuítas, Capela Nossa Senhora</div>
+        </div>
+        <div class="destaque-item">
+          <div class="destaque-title"><span>⚓</span> Turístico</div>
+          <div class="destaque-list">Porto das Artes, Mirante do Morro, Trilha Histórica</div>
+        </div>
+        <div class="destaque-item">
+          <div class="destaque-title"><span>🏛</span> Histórico</div>
+          <div class="destaque-list">Palácio do Governo, Forte Colonial, Câmara Municipal</div>
+        </div>
+        <div class="destaque-item">
+          <div class="destaque-title"><span>🌿</span> Lazer</div>
+          <div class="destaque-list">Jardim Histórico, Parque da Memória, Praça Central</div>
+        </div>
+        <div class="destaque-item">
+          <div class="destaque-title"><span>🎨</span> Cultural</div>
+          <div class="destaque-list">Museu da Cidade, Teatro Municipal, Galeria de Arte</div>
+        </div>
+        <div class="destaque-item">
+          <div class="destaque-title"><span>🍽</span> Gastronomia</div>
+          <div class="destaque-list">Mercado Municipal, Feira Colonial, Largo do Sabor</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
