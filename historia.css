@@ -435,15 +435,3 @@ td.nome { font-weight: 500; }
   padding-left: 12px;
   text-align: justify;
 }
-
-footer{
-    background-color: rgb(27, 19, 9);
-    color: #e0c39a;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-top: 2%;
-}
